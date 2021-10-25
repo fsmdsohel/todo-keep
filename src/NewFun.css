@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header {
+  width: 100%;
+  background-color: #151515;
+  display: flex;
+  align-items: flex-end;
+}
+.header img {
+  margin: 20px 5px 20px 20px;
+}
+.header h1 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer a {
+  color: #d26702;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+footer a:hover {
+  /* color: #141499e0; */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.main_note {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+  position: relative;
+  margin: 0 10px;
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+}
+form input,
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+}
+form input {
+  font-size: 22px;
+  /* border-radius: 7px 7px 0 0; */
+}
+form textarea {
+  font-size: 16px;
+  /* border-radius: 0 0 7px 7px; */
+  margin-top: 5px;
+  height: 45px;
+}
+form .add_items {
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  /* color: #fff; */
+  transition: background, color, box-shadow, 0.3s ease;
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form .add_items.add_items2 {
+  right: 40px;
+}
+button.add_items {
+  border-radius: 0 50% 50% 0;
+}
+button.add_items2 {
+  border-radius: 50% 0 0 50%;
+}
+/* form .add_items .add_icons {
+  color: #fff;
+} */
+
+form .add_items:hover {
+  color: #fff;
+  background: #d26702;
+  box-shadow: none;
+}
+.notes {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px 10px 0 10px;
+}
+.note {
+  margin: 10px;
+  flex: 300px;
+  max-width: 300px;
+  background: #fff;
+  height: auto;
+  box-shadow: 0 1px 5px rgb(204, 204, 204);
+  border-radius: 7px;
+  position: relative;
+}
+.note h1 {
+  margin: 10px;
+  color: #7c7c7c;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.note p {
+  margin: 0 10px;
+  color: #666666;
+  letter-spacing: 0.5px;
+  word-spacing: 1.5px;
+  margin-bottom: 50px;
+}
+.note .delete_icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  color: gray;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgb(204, 204, 204);
+}
+.note .delete_icons:hover {
+  background: #151515;
+  color: #fff;
+}
+.note .delete_icons svg.delete_icon {
+  font-size: 20px;
+}
